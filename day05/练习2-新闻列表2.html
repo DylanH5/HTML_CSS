@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习2-新闻列表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .news {
+            width: 360px;
+            height: 200px;
+            /*background: pink;*/
+            margin: 100px auto;
+        }
+
+        .news_title {
+            width: 48px;
+            height: 34px;
+            display: inline-block;
+            text-align: center;
+            line-height: 34px;
+            background: #ffffff;
+            margin: -1px -1px;
+
+            border-top: orange 3px solid;
+            border-right: #dbdee1 solid 1px;
+        }
+
+        .news_top_border {
+            width: 360px;
+            height: 34px;
+            display: inline-block;
+            background: #eeeeee;
+            border: 1px solid #dbdee1;
+            margin-bottom: 5px;
+        }
+
+        li {
+            height: auto;
+            list-style: none;
+            line-height: 24px;
+            font-size: 12px;
+            color: #666666;
+            display: list-item;
+            background-image: url("../doc/基础班课程资料/code/day05/案例/20-综合案例二-新闻列表/images/square.png");
+            background-repeat: no-repeat;
+            background-position: 0 center;
+        }
+        a {
+            background-image: url("../doc/基础班课程资料/code/day05/案例/20-综合案例二-新闻列表/images/img.gif");
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding-left: 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="news">
+    <span class="news_top_border"><span class="news_title">新闻</span></span>
+    <ul>
+        <li><a>点赞“新农人” 温暖的伸手</a></li>
+        <li><a>在希望的田野上...</a></li>
+        <li><a>“中国天眼”又有新发现 已在《自然》杂志发表</a></li>
+        <li><a>急！这个领域，缺人！月薪4万元还不好招！啥情况？</a></li>
+        <li><a>G9“带货”背后：亏损面持续扩大，竞争环境激烈</a></li>
+        <li><a>多地力推二手房“带押过户”，有什么好处？</a></li>
+    </ul>
+</div>
+</body>
+</html>

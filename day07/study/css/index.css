@@ -1,0 +1,400 @@
+body {
+    background-color: #f3f5f7;
+}
+
+/*头部*/
+.header {
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .wrapper {
+    height: 100px;
+    display: flex;
+    padding: 29px 0 30px;
+}
+
+/*logo*/
+.header .logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url("../images/logo.png");
+    font-size: 0;
+}
+
+/*导航栏*/
+.header ul {
+    margin-left: 102px;
+    margin-top: 6px;
+    justify-content: space-between;
+    display: flex;
+    color: #333333;
+}
+
+.header ul a {
+    display: block;
+    height: 35px;
+    font-size: 19px;
+    line-height: 27px;
+    padding: 0 8px;
+}
+
+.header .nav ul .l2 {
+    margin: 0 24px;
+}
+
+.header ul .active, .header ul a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/*搜索框*/
+.header .search {
+    width: 412px;
+    height: 40px;
+    margin-left: 88px;
+    border-radius: 20px;
+    background: #f3f5f7;
+    padding: 12px 12px 10px 19px;
+    line-height: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.header .search input {
+    flex: 1;
+    line-height: 40px;
+    border: 0 solid transparent;
+    background: transparent;
+    outline: none;
+}
+
+.header .search input::placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.header .search a {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+    background: url("../images/search.png");
+}
+
+/*用户*/
+
+.header .user {
+    margin-left: 32px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.header .user a img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .user span {
+    color: #666666;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+/*banner区域*/
+.banner {
+    height: 420px;
+    background: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    background-image: url("../uploads/banner.png");
+}
+
+.banner .nav {
+    width: 191px;
+    height: 420px;
+    background-color: #005576;
+    padding-top: 3px;
+}
+
+.banner .nav li a {
+    display: block;
+    height: 46px;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 46px;
+    padding: 0 20px;
+    background-image: url("../images/right.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 20px;
+}
+
+.banner .nav li a:hover {
+    color: #00a4ff;
+    background: url("../images/right-hover.png") no-repeat right;
+}
+
+.banner .lesson {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 218px;
+    height: 305px;
+    background: #209dd5;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.banner .lesson .lesson_title {
+    display: block;
+    font-size: 15px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 14px;
+    color: #FFFFFF;
+    flex: 1;
+    font-weight: 400;
+}
+
+.banner .lesson .lesson_list {
+    height: 257px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding-top: 2px;
+}
+
+.banner .lesson .lesson_list ul li {
+    display: block;
+    /*background: pink;*/
+    height: 54px;
+    margin: 11px 14px 0;
+    padding-bottom: 9px;
+}
+
+.banner .lesson_list li:not(li:nth-child(4)) {
+    border-bottom: #e0e0e0 solid 1px;
+}
+
+.banner .lesson .lesson_list ul li h4 {
+    font-size: 14px;
+    color: #333333;
+}
+
+.banner .lesson .lesson_list p {
+    font-size: 12px;
+    color: #7d7d7d;
+    margin-top: 7px;
+    margin-bottom: 9px;
+}
+
+.banner .lesson .lesson_list span {
+    color: #00a4ff;
+}
+
+.banner .lesson-button {
+    height: 32px;
+    display: block;
+    border-radius: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 32px;
+    background: #00a4ff;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/*横向导航栏*/
+.recommend {
+    height: 60px;
+    background: white;
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+}
+
+.recommend h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #00a4ff;
+}
+
+.recommend ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 84px 0 24px;
+    font-size: 18px;
+}
+
+.recommend li:not(.recommend li:last-child) {
+    border-right: #e0e0e0 solid 1px;
+    padding-right: 24px;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+
+}
+
+/*精品推荐课程*/
+.hd {
+    height: 30px;
+    /*background: pink;*/
+    margin: 30px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.hd a {
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    padding-right: 20px;
+    background: url("../images/more.png") no-repeat right center;
+}
+
+.bd ul {
+    height: 556px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.bd li {
+    width: 228px;
+    height: 271px;
+    background: white;
+}
+
+.bd h4 {
+    font-size: 14px;
+    height: 40px;
+    margin: 15px 20px 12px 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.bd p {
+    margin: 0 20px;
+    height: 20px;
+    color: #999999;
+}
+
+.bd span {
+    color: #fa6400;
+}
+
+.bd i {
+    font-style: normal;
+}
+
+/*前端开发工程师*/
+.web ul {
+    display: flex;
+}
+
+.web .hd ul a {
+    background: none;
+    font-size: 16px;
+    color: #333333;
+}
+
+.web .hd ul li {
+    margin-right: 40px;
+}
+
+.web .hd .active, .web a:hover {
+    color: #00a4ff;
+}
+
+.web .bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.web .bd .right {
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.web .bd ul {
+    height: 271px;
+}
+
+/*版权*/
+.bottom {
+    margin: 69px auto 0;
+    height: 273px;
+    background: white;
+    padding: 60px 0 0;
+}
+
+.bottom  .left p {
+    font-size: 12px;
+    color: #666666;
+    margin: 24px 0 14px;
+    width: 440px;
+    line-height: 17px;
+}
+
+.bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+    border: #00a4ff solid 1px;
+}
+
+.bottom .right {
+    /*background: pink;*/
+    height: 151px;
+    width: 516px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .right h4 {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 13px;
+    font-weight: 400;
+}
+.bottom .right p{
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #666666;
+}
+
+

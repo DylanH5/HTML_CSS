@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习1-产品布局</title>
+    <style>
+        .root {
+            width: 1227px;
+            height: 614px;
+            display: flex;
+        }
+
+        .left {
+            height: 614px;
+            width: 234px;
+            background: #87ceeb;
+        }
+        .right {
+            width: 980px;
+            margin-left: 12px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background: #cccccc;
+        }
+
+        .item {
+            width: 234px;
+            height: 300px;
+            background: #ffa500;
+        }
+    </style>
+</head>
+<body>
+<div class="root">
+    <div class="left">
+
+    </div>
+    <div class="right">
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+    </div>
+</div>
+</body>
+</html>
