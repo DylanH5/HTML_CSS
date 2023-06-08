@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习2-淘宝轮播图</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .banner {
+            width: 564px;
+            height: 315px;
+            background: pink;
+            margin: 100px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner img {
+            width: 564px;
+            height: 315px;
+        }
+
+        .banner .previous, .banner .next {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 30px;
+            width: 20px;
+            line-height: 30px;
+            border-radius: 0 15px 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            opacity: 0;
+        }
+
+        .banner .next {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .banner:hover .previous, .banner:hover .next {
+            opacity: 1;
+        }
+
+        .banner ol {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+            height: 13px;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            display: flex;
+        }
+
+        .banner ol li {
+            width: 8px;
+            height: 8px;
+            margin: 3px;
+            background: white;
+            border-radius: 50%;
+        }
+        .banner .active {
+            background: #ff5000;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="images/banner1.jpg" alt="banner">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/banner2.jpg" alt="banner">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/banner3.jpg" alt="banner">
+            </a>
+        </li>
+    </ul>
+    <a class="previous">
+        <i class="iconfont icon-zuoce"></i>
+    </a>
+    <a class="next">
+        <i class="iconfont icon-youce"></i>
+    </a>
+    <ol>
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+    </ol>
+</div>
+</body>
+</html>
