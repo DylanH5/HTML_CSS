@@ -31,10 +31,16 @@
     display: flex;
     justify-content: space-between;
     color: white;
+    cursor: pointer;
 }
 
 .banner .nav li a {
     color: white;
+}
+
+.banner .nav li:hover {
+    background: #00BE9A;
+    opacity: 1;
 }
 
 .banner .nav li .left {
@@ -64,18 +70,338 @@
     margin-left: 8px;
     background: transparent;
     border-radius: 50%;
+    cursor: pointer;
 }
+
 .banner .dot li span {
     display: block;
     width: 14px;
     height: 14px;
     margin: 4px;
-    background: rgba(255,255,255,0.50);
+    background: rgba(255, 255, 255, 0.50);
     border-radius: 50%;
 }
+
 .banner .dot .active {
-    background: rgba(255,255,255,0.50);
+    background: rgba(255, 255, 255, 0.50);
 }
-.banner .dot .active span{
+
+.banner .dot .active span {
     background: white;
+}
+
+.title {
+    height: 42px;
+    margin: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 42px;
+}
+
+.title div {
+    display: flex;
+}
+
+.title h3 {
+    font-size: 30px;
+}
+
+.title p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 35px;
+    align-self: flex-end;
+    color: #A1A1A1;
+}
+
+.title a {
+    color: #A1A1A1;
+}
+
+.title i {
+    color: #A1A1A1;
+    margin-left: 10px;
+}
+
+.bd ul {
+    height: 404px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd li {
+    display: block;
+    background: #EEF9F4;
+    text-align: center;
+}
+
+.bd img {
+    height: 304px;
+    width: 304px;
+}
+
+.bd h4 {
+    font-size: 20px;
+    margin: 18px 0 8px;
+}
+
+.bd p {
+    font-size: 18px;
+    color: #AA2113;
+}
+
+.bd span {
+    font-size: 22px;
+}
+
+.recommend li {
+    background: white;
+}
+
+.recommend .bd p {
+    font-size: 16px;
+    color: #A1A1A1;
+}
+
+.hot {
+    height: 468px;
+    background: #F5F5F5;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.hot .title {
+    margin: 40px 0;
+    position: relative;
+}
+
+.hot .title ul {
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    display: flex;
+}
+
+.hot .title .iconfont {
+    width: 22px;
+    font-size: 20px;
+    height: 20px;
+    margin-left: 12px;
+    background: #ddd;;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hot .title .icon-arrow-right-bold {
+    background: #00BE9A;
+}
+
+.hot .pic ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot .pic img {
+    width: 244px;
+    height: 306px;
+}
+
+.refresh .title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.refresh .classify {
+    height: 20px;
+    display: flex;
+    margin-right: 59px;
+}
+
+.refresh .classify a {
+    padding: 0 7px;
+    margin-left: 6px;
+    color: #333333;
+}
+
+.refresh .classify .active {
+    color: white;
+    background: #00BE9A;
+}
+
+.refresh .content {
+    display: flex;
+    justify-content: space-between;
+    height: 610px;
+}
+
+.refresh .content .left {
+    width: 248px;
+}
+
+.refresh .content .left img {
+    width: 248px;
+}
+
+.refresh .content .right {
+    display: flex;
+    margin-left: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.refresh .content .right li {
+    display: block;
+    width: 242px;
+    height: 305px;
+    border: #ffffff solid 2px;
+    padding: 10px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.refresh .content .right a img {
+    display: flex;
+    height: 181px;
+}
+
+.refresh .content .right a .top {
+    margin-top: 14px;
+    height: 57px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.refresh .content .right a .price {
+    color: #AF2F22;
+}
+
+.refresh .content .right a .price span {
+    font-size: 22px
+}
+
+.refresh .content .right .cover {
+    width: 242px;
+    height: 84px;
+    background: #00BE9A;
+    position: absolute;
+    bottom: -84px;
+    left: 0;
+    text-align: center;
+    color: white;
+    transition: all 0.5s;
+}
+
+.refresh .content .right .cover p:nth-child(1) {
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+
+.refresh .content .right .cover p:nth-child(2) {
+    width: 120px;
+    height: 1px;
+    background: rgba(255,255,255,0.11);
+    margin: 0 auto;
+}
+
+.refresh .content .right .cover p:nth-child(3) {
+   font-size: 13px;
+    margin-top: 6px;
+}
+.refresh .content .right li:hover{
+    border: #00BE9A solid 2px;
+}
+.refresh .content .right li:hover .cover{
+    bottom: 0;
+}
+
+.topic .title{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.topic .content{
+    height: 355px;
+    margin-bottom: 40px;
+}
+.topic .content ul {
+    display: flex;
+    justify-content: space-between;
+}
+.topic .content li {
+    width: 405px;
+}
+.topic .content li img {
+    width: 405px;
+    height: 288px;
+}
+.topic .content ul li .data{
+    height: 67px;
+    display: flex;
+    align-items: center;
+}
+.topic .content ul li .data div{
+    font-size: 14px;
+    color: #666666;
+   line-height: 14px;
+    font-weight: 400;
+}
+.topic .content ul li .data .iconfont{
+   margin-right: 4px;
+    line-height: 14px;
+    font-size: 14px;
+}
+.topic .content ul li .data div:nth-child(1){
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.topic .content ul li .data div:nth-child(1) i{
+    color: #AA2113
+}
+.topic .content ul li .data div:nth-child(2){
+    flex: 1;
+}
+.topic .content ul li .data div:nth-child(3){
+    margin-right: 20px;
+}
+.topic .content .pic{
+    width: 405px;
+    height: 288px;
+    position: relative;
+}
+.topic .content ul li .pic  .tt {
+    height: 90px;
+    width: 405px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(137,137,137,0.00) 0%, rgba(0,0,0,0.90) 100%);
+    color: white;
+}
+.topic .content ul li .pic  .tt p:nth-child(1){
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.topic .content ul li .pic  .tt p:nth-child(2){
+    font-size: 16px;
+}
+.topic .content ul li .pic  .tt .right{
+    padding: 0 7px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    background: white;
+    color: #AA2113;
+}
+.topic .content ul li .pic  .tt i{
+    font-size: 14px;
+}
+.topic .content ul li .pic  .tt .right span{
+    font-size: 18px;
+    line-height: 25px;
 }
