@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习1-双开门</title>
+    <style>
+        .car {
+            display: flex;
+            width: 1336px;
+            height: 600px;
+            margin: 0 auto;
+            background-image: url("images/bg.jpg");
+            overflow: hidden;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+            background-image: url("images/fm.jpg");
+            transition: all 0.5s;
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+            background: url("images/fm.jpg") no-repeat right;
+            transition: all 0.5s;
+        }
+
+        .car:hover .left {
+           transform: translateX(-100%);
+        }
+        .car:hover .right {
+           transform: translateX(100%);
+        }
+    </style>
+</head>
+<body>
+<div class="car">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>
