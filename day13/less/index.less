@@ -1,0 +1,82 @@
+// out: ./css/index.css
+//引入基类
+@import "base.less";
+//定义基础变量
+@rootSize: 37.5rem;
+header {
+  display: flex;
+  align-items: center;
+  height: (44 / @rootSize);
+  padding: 0 15px;
+
+  a {
+    width: (120 / @rootSize);
+
+    .icon-left {
+      display: block;
+      height: (20 / @rootSize);
+      font-size: (20 / @rootSize);
+    }
+  }
+
+  h3 {
+    flex: 1;
+    font-size: (17 / @rootSize);
+  }
+
+  p {
+    font-size: (15 / @rootSize);
+    color: #2CB5A5;
+  }
+}
+
+.banner {
+
+  img {
+    margin: (30 / @rootSize) (67.5 / @rootSize) (18 / @rootSize);
+    width: (240 / @rootSize);
+    height: (206 / @rootSize);
+  }
+
+  p {
+    margin-bottom: (33.5 / @rootSize);
+    text-align: center;
+    font-size: (16 / @rootSize);
+
+    span {
+      color: #16C2A3;
+    }
+  }
+}
+
+ul li{
+  margin-bottom: (15 / @rootSize);
+a {
+  display: flex;
+  align-items: center;
+  width: (345 / @rootSize);
+  height: (78 / @rootSize);
+  margin: auto;
+  border: #EDEDED solid (1 / @rootSize);
+  border-radius: (4 / @rootSize);
+  padding: 0 (15 / @rootSize);
+
+  img {
+    width: (40 / @rootSize);
+    height: (40 / @rootSize);
+    margin-right: (4 / @rootSize);
+  }
+
+  .text {
+    flex: 1;
+    h4 {
+      font-size: (16 / @rootSize);
+      margin-bottom: (4 / @rootSize);
+    }
+
+    p {
+      font-size: (13 / @rootSize);
+      color: #848484
+    }
+  }
+}}

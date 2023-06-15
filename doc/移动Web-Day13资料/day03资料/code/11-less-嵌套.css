@@ -1,0 +1,13 @@
+.father {
+  color: red;
+}
+.father .son {
+  width: 200px;
+}
+.father .son a {
+  color: green;
+}
+.father .son a:hover {
+  color: blue;
+}
+/*# sourceMappingURL=11-less-嵌套.css.map */
